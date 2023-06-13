@@ -8,5 +8,9 @@
 
     <h1>Is today any special day? <span th:style="${isActive} ? 'color:green' : 'color:red'"  th:text="${isActive} ? 'Yes' : 'No'"></span> </h1>
 
+    <h1 th:if="${gender}=='M'">Male</h1>
+    <h1 th:unless="${gender}=='M'">Female</h1>
+
+
 </body>
 </html>
