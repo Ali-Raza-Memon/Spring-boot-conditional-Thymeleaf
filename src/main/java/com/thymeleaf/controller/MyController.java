@@ -38,6 +38,11 @@ public class MyController {
     public String ConditionalHandler(Model m){
         m.addAttribute("isActive",false);
         m.addAttribute("gender","F");
+
+        List<Integer> list = List.of(23,134,123,133,432,12,32);
+        m.addAttribute("myList",list);
+
+
         return "conditional";
     }
 
