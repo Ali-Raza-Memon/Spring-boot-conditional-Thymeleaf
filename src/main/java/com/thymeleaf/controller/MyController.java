@@ -33,4 +33,11 @@ public class MyController {
         return "iterate";
     }
 
+
+    @GetMapping("/condition")
+    public String ConditionalHandler(Model m){
+        m.addAttribute("isActive",true);
+        return "conditional";
+    }
+
 }
