@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <h1>Is today any special day? <span th:text="${isActive} ? 'Yes' : 'No'"></span> </h1>
+    <h1>Is today any special day? <span th:style="${isActive} ? 'color:green' : 'color:red'"  th:text="${isActive} ? 'Yes' : 'No'"></span> </h1>
 
 </body>
 </html>
